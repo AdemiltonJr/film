@@ -1,1 +1,29 @@
 @use 'hero';
+@use 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "EB Garamond", serif;
+}
+
+@mixin text($fontSize: 24px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variables.$douradoSuave;
+}
+
+@mixin tittle($fontSize: 38px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variables.$douradoSuave;
+}
+
+.text {
+    @include text;
+}
+
+.tittle {
+    @include tittle;
+}

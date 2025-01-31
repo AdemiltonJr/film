@@ -1,3 +1,20 @@
+@use 'variables';
+
 .hero {
-    background-image: url(../images/hero_bg.jpg);
+    padding: 5.6vw;
+    min-height: 90vh;
+    background-position: center;
+    text-align: center;
+    background: 
+    linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0,0,0,0)),
+    url('../images/hero_bg.jpg') center/cover no-repeat;
+
+    &__content {
+        max-width: 640px;
+
+        &__branding {
+            max-width: 320px;
+            margin: 30px auto 38px;
+        }
+    }
 }
