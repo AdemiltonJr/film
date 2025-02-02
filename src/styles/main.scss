@@ -1,5 +1,7 @@
 @use 'hero';
 @use 'variables';
+@use 'resume';
+
 
 * {
     margin: 0;
@@ -20,10 +22,31 @@
     color: variables.$douradoSuave;
 }
 
+//text ------------
+
 .text {
     @include text;
 }
 
+.text--big {
+    @include text(35px);
+}
+
+.text--small {
+    @include text(18px);
+}
+
+//tittle --------------
+
 .tittle {
     @include tittle;
+}
+
+.tittle--big {
+    @include tittle(48px);
+    font-weight: 400
+}
+
+.tittle--small {
+    @include tittle(24px);
 }

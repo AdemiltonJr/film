@@ -1,0 +1,19 @@
+@use 'variables';
+
+.resume {
+
+    background-color: variables.$azulProfundo;
+    padding: 5.6vw;
+    min-height: 90vh;
+    background-position: center;
+    text-align: center;
+    
+    &__list {
+        max-width: 640px;
+        display: flex;
+
+        &__item {
+            display: flex;
+        }
+    }
+}
