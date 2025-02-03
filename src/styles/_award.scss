@@ -1,0 +1,49 @@
+@use 'variables';
+
+.awards {
+    padding: 6vw 10vw;
+    background: variables.$azulProfundo;
+    color: variables.$brancoNeve;
+    text-align: center;
+
+    .tittle {
+        margin-bottom: 40px;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .award {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border-radius: 12px;
+        max-width: 350px;
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            width: 80px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        &__info {
+            h4 {
+                margin-bottom: 10px;
+                color: variables.$douradoSuave;
+            }
+
+            p {
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

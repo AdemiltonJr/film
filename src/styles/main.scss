@@ -1,6 +1,8 @@
 @use 'hero';
 @use 'variables';
 @use 'resume';
+@use 'cast';
+@use 'award';
 
 
 * {
@@ -8,6 +10,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "EB Garamond", serif;
+    list-style: none;
 }
 
 @mixin text($fontSize: 24px) {
